@@ -1,41 +1,78 @@
-# Dingbot
+# DingTalk Bot
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/dingbot`. To experiment with that code, run `bin/console` for an interactive prompt.
+DingTalk Bot是阿里钉钉自定义机器人的Ruby库  
+官方文档：[阿里钉钉自定义机器人](https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7629140.0.0.karFPe&treeId=257&articleId=105735&docType=1). 
 
-TODO: Delete this and the text above, and describe your gem
 
-## Installation
+## 安装
+从rubygems中安装:
 
-Add this line to your application's Gemfile:
+```sh
+gem install dingbot
+```
+
+添加到Gemfile中:
 
 ```ruby
 gem 'dingbot'
 ```
 
-And then execute:
+## 用法
 
-    $ bundle
+初始化客户端:
 
-Or install it yourself as:
+```ruby
+access_token = 'xxxxxxxxxxxxxxx'
+client = DingBot.client(access_token)
+```
 
-    $ gem install dingbot
+发送消息
+```ruby
+# 发送Text消息
+message = DingBot::Message::Text.new('我就是我, 是不一样的烟火',
+                                            ['156xxxx8827'],
+                                            false)
+client.send_msg(message)
 
-## Usage
+# 发送Link消息
+message = DingBot::Message::Link.new('我就是我, 是不一样的烟火',
+                                     '这个即将发布的新版本，创始人陈航（花名“无招”）称它为“红树林”。',
+                                     'https://mp.weixin.qq.com/s?__biz=MzA4NjMwMTA2Ng==&mid=2650316842&idx=1&sn=60da3ea2b29f1dcc43a7c8e4a7c97a16&scene=2&srcid=09189AnRJEdIiWVaKltFzNTw&from=timeline&isappinstalled=0&key=&ascene=2&uin=&devicetype=android-23&version=26031933&nettype=WIFI',
+                                     'https://avatars1.githubusercontent.com/u/64818')
+client.send_msg(message)
 
-TODO: Write usage instructions here
+# 发送Markdown消息
+message = DingBot::Message::Markdown.new('我就是我, 是不一样的烟火', '### 我就是我, 是不一样的烟火')
+client.send_msg(message)
 
-## Development
+# 发送整体跳转ActionCard消息
+message = DingBot::Message::WholeActionCard.new('乔布斯 20 年前想打造一间苹果咖啡厅，而它正是 Apple Store 的前身',
+                                                '![screenshot](@lADOpwk3K80C0M0FoA) ### 乔布斯 20 年前想打造的苹果咖啡厅',
+                                                '0',
+                                                '0',
+                                                '阅读全文',
+                                                'https://www.dingtalk.com/')
+client.send_msg(message)
+    
+# 发送独立跳转ActionCard类型消息
+message = DingBot::Message::IndependentActionCard.new('乔布斯 20 年前想打造一间苹果咖啡厅，而它正是 Apple Store 的前身',
+                                                      '![screenshot](@lADOpwk3K80C0M0FoA) ### 乔布斯 20 年前想打造的苹果咖啡厅',
+                                                      '0',
+                                                      '0',
+                                                      [
+                                                         DingBot::Message::ActionBtn.new('内容不错', 'https://www.dingtalk.com/'),
+                                                         DingBot::Message::ActionBtn.new('不感兴趣', 'https://www.dingtalk.com/')
+                                                      ])
+client.send_msg(message)                                                                 
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/dingbot. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
+# 发送FeedCard类型                                            
+message = DingBot::Message::FeedCard.new([
+                                           DingBot::Message::FeedCardLink.new('时代的火车向前开',
+                                                                              'https://avatars1.githubusercontent.com/u/64818',
+                                                                              'https://mp.weixin.qq.com/s?__biz=MzA4NjMwMTA2Ng==&mid=2650316842&idx=1&sn=60da3ea2b29f1dcc43a7c8e4a7c97a16&scene=2&srcid=09189AnRJEdIiWVaKltFzNTw&from=timeline&isappinstalled=0&key=&ascene=2&uin=&devicetype=android-23&version=26031933&nettype=WIFI')
+                                         ])
+client.send_msg(message)                              
+```
 
 ## License
-
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
+Released under the BSD 2-clause license. See LICENSE.txt for details.

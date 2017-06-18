@@ -11,6 +11,10 @@ module DingBot
 
     attr_accessor :access_token
 
+    def initialize(access_token='')
+      @access_token = access_token
+    end
+
     # Parse response body.
     def self.parse(body)
       begin

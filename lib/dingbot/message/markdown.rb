@@ -1,26 +1,33 @@
 module DingBot
   module Message
 
-    class Link < Base
-      attr_accessor :title, :text, :pic_url, :message_url
+    # markdown类型
+    # {
+    #     "msgtype": "markdown",
+    #     "markdown": {
+    #         "title":"杭州天气",
+    #         "text": "#### 杭州天气\n" +
+    #             "> 9度，西北风1级，空气良89，相对温度73%\n\n" +
+    #             "> ![screenshot](http://image.jpg)\n"  +
+    #             "> ###### 10点20分发布 [天气](http://www.thinkpage.cn/) \n"
+    #     }
+    # }
+    class Markdown < Base
+      attr_accessor :title, :text
 
-      def initialize(title='', text='', pic_url='', message_url='')
+      def initialize(title='', text='')
         @title = title
         @text = text
-        @pic_url = pic_url
-        @message_url = message_url
       end
 
       def msg_type
-        TYPE::LINK
+        TYPE::MARKDOWN
       end
 
       def body_params
-        super.merge(link: {
+        super.merge(markdown: {
             text: @text,
             title: @title,
-            picUrl: @pic_url,
-            messageUrl: @message_url
         })
       end
     end

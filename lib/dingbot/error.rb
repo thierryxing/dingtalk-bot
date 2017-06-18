@@ -1,4 +1,4 @@
-module SentryApi
+module DingBot
   module Error
     # Custom error class for rescuing from all Sentry errors.
     class Error < StandardError;
@@ -45,7 +45,7 @@ module SentryApi
         case message
           when SentryApi::ObjectifiedHash
             message.to_h.sort.map do |key, val|
-              "'#{key}' #{(val.is_a?(Hash) ? val.sort.map { |k, v| "(#{k}: #{v.join(' ')})" } : val).join(' ')}"
+              "'#{key}' #{(val.is_a?(Hash) ? val.sort.map {|k, v| "(#{k}: #{v.join(' ')})"} : val).join(' ')}"
             end.join(', ')
           when Array
             message.join(' ')
