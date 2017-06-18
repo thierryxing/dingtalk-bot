@@ -1,4 +1,6 @@
 # DingTalk Bot
+[![Gem Version](https://badge.fury.io/rb/dingbot.svg)](https://badge.fury.io/rb/dingbot.svg)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/thierryxing/dingtalk-bot/master/LICENSE.txt)
 
 DingTalk Bot是阿里钉钉自定义机器人的Ruby库  
 官方文档：[阿里钉钉自定义机器人](https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7629140.0.0.karFPe&treeId=257&articleId=105735&docType=1). 
@@ -76,4 +78,4 @@ client.send_msg(message)
 更为详细的用法请见此链接：[https://github.com/thierryxing/dingtalk-bot/blob/master/test/dingbot_test.rb](https://github.com/thierryxing/dingtalk-bot/blob/master/test/dingbot_test.rb)
 
 ## License
-Released under the BSD 2-clause license. See LICENSE.txt for details.
+Released under the MIT license. See LICENSE.txt for details.

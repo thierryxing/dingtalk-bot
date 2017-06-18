@@ -33,5 +33,6 @@
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.10.2, RVM: ruby-2.3.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.6.0, RVM: ruby-2.3.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.5.0, RVM: ruby-2.3.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="yard (v0.9.9, RVM: ruby-2.3.1) [gem]" level="application" />
   </component>
 </module>
