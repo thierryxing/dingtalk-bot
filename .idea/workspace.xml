@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c677bfc7-f26b-44ab-b929-b38da245becc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dingbot.iml" afterPath="$PROJECT_DIR$/.idea/dingbot.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dingbot.gemspec" afterPath="$PROJECT_DIR$/dingbot.gemspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dingbot.rb" afterPath="$PROJECT_DIR$/lib/dingbot.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dingbot/client.rb" afterPath="$PROJECT_DIR$/lib/dingbot/client.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dingbot/error.rb" afterPath="$PROJECT_DIR$/lib/dingbot/error.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dingbot/message/action_card.rb" afterPath="$PROJECT_DIR$/lib/dingbot/message/action_card.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dingbot/message/base.rb" afterPath="$PROJECT_DIR$/lib/dingbot/message/base.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dingbot/message/feed_card.rb" afterPath="$PROJECT_DIR$/lib/dingbot/message/feed_card.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dingbot/message/link.rb" afterPath="$PROJECT_DIR$/lib/dingbot/message/link.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dingbot/message/markdown.rb" afterPath="$PROJECT_DIR$/lib/dingbot/message/markdown.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dingbot/message/text.rb" afterPath="$PROJECT_DIR$/lib/dingbot/message/text.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dingbot/version.rb" afterPath="$PROJECT_DIR$/lib/dingbot/version.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/dingbot_test.rb" afterPath="$PROJECT_DIR$/test/dingbot_test.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,10 +42,10 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="420">
-                <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+              <first_editor relative-caret-position="452">
+                <caret line="71" column="104" lean-forward="false" selection-start-line="71" selection-start-column="104" selection-end-line="71" selection-end-column="104" />
                 <folding>
-                  <marker date="1497782318000" expanded="true" signature="588:592" ph="##..." />
+                  <marker date="1497782549000" expanded="true" signature="588:592" ph="##..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -510,12 +496,12 @@
       <option name="presentableId" value="Default" />
       <updated>1497604722774</updated>
       <workItem from="1497604723936" duration="2965000" />
-      <workItem from="1497772186956" duration="10197000" />
+      <workItem from="1497772186956" duration="10298000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13162000" />
+    <option name="totallyTimeSpent" value="13263000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1052" extended-state="6" />
@@ -791,10 +777,10 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="420">
-            <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <first_editor relative-caret-position="452">
+            <caret line="71" column="104" lean-forward="false" selection-start-line="71" selection-start-column="104" selection-end-line="71" selection-end-column="104" />
             <folding>
-              <marker date="1497782318000" expanded="true" signature="588:592" ph="##..." />
+              <marker date="1497782549000" expanded="true" signature="588:592" ph="##..." />
             </folding>
           </first_editor>
           <second_editor />
