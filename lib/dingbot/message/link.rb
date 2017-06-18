@@ -1,0 +1,31 @@
+module DingBot
+  module Message
+
+    class Text < Base
+      attr_accessor :content, :at_mobiles, :is_at_all
+
+      def initialize(content='', at_mobiles=[], is_at_all=false)
+        @content = content
+        @at_mobiles = at_mobiles
+        @is_at_all = is_at_all
+      end
+
+      def msg_type
+        TYPE::TEXT
+      end
+
+      def body_params
+        super.merge({
+                        text: {
+                            "content": @content
+                        },
+                        at: {
+                            atMobiles: @at_mobiles,
+                            isAtAll: @is_at_all
+                        }
+                    })
+      end
+    end
+
+  end
+end
