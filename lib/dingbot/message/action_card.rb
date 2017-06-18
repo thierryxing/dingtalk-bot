@@ -17,12 +17,14 @@ module DingBot
       end
 
       def body_params
-        super.merge(actionCard: {
-            title: @title,
-            text: @text,
-            "hideAvatar": @hide_avatar,
-            "btnOrientation": @btn_orientation,
-        })
+        super.merge(
+            actionCard: {
+                title: @title,
+                text: @text,
+                "hideAvatar": @hide_avatar,
+                "btnOrientation": @btn_orientation,
+            }
+        )
       end
     end
 
@@ -37,10 +39,12 @@ module DingBot
       end
 
       def body_params
-        action_card = super[:actionCard].merge({
-                                                   singleTitle: @single_title,
-                                                   singleURL: @single_url
-                                               })
+        action_card = super[:actionCard].merge(
+            {
+                singleTitle: @single_title,
+                singleURL: @single_url
+            }
+        )
         super.merge(actionCard: action_card)
       end
     end

@@ -1,6 +1,6 @@
 module DingBot
   module Error
-    # Custom error class for rescuing from all Sentry errors.
+    # Custom error class for rescuing from all errors.
     class Error < StandardError;
     end
 

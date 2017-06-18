@@ -25,10 +25,12 @@ module DingBot
       end
 
       def body_params
-        super.merge(markdown: {
-            text: @text,
-            title: @title,
-        })
+        super.merge(
+            markdown: {
+                text: @text,
+                title: @title,
+            }
+        )
       end
     end
 

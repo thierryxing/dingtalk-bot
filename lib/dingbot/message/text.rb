@@ -29,15 +29,17 @@ module DingBot
       end
 
       def body_params
-        super.merge({
-                        text: {
-                            "content": @content
-                        },
-                        at: {
-                            atMobiles: @at_mobiles,
-                            isAtAll: @is_at_all
-                        }
-                    })
+        super.merge(
+            {
+                text: {
+                    "content": @content
+                },
+                at: {
+                    atMobiles: @at_mobiles,
+                    isAtAll: @is_at_all
+                }
+            }
+        )
       end
     end
 

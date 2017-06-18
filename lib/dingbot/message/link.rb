@@ -26,12 +26,14 @@ module DingBot
       end
 
       def body_params
-        super.merge(link: {
-            text: @text,
-            title: @title,
-            picUrl: @pic_url,
-            messageUrl: @message_url
-        })
+        super.merge(
+            link: {
+                text: @text,
+                title: @title,
+                picUrl: @pic_url,
+                messageUrl: @message_url
+            }
+        )
       end
     end
 
