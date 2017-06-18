@@ -73,6 +73,7 @@ message = DingBot::Message::FeedCard.new([
                                          ])
 client.send_msg(message)                              
 ```
+更为详细的用法请见此链接：[https://github.com/thierryxing/dingtalk-bot/blob/master/test/dingbot_test.rb](https://github.com/thierryxing/dingtalk-bot/blob/master/test/dingbot_test.rb)
 
 ## License
 Released under the BSD 2-clause license. See LICENSE.txt for details.
