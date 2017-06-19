@@ -21,8 +21,8 @@ module DingBot
             actionCard: {
                 title: @title,
                 text: @text,
-                "hideAvatar": @hide_avatar,
-                "btnOrientation": @btn_orientation,
+                hideAvatar: @hide_avatar,
+                btnOrientation: @btn_orientation,
             }
         )
       end
