@@ -32,7 +32,7 @@ module DingBot
     class WholeActionCard < ActionCard
       attr_accessor :single_title, :single_url
 
-      def initialize(title='', text='', btn_orientation='0', hide_avatar='0', single_title='', single_url='')
+      def initialize(title='', text='', single_title='', single_url='', btn_orientation='0', hide_avatar='0')
         super(title, text, btn_orientation, hide_avatar)
         @single_title = single_title
         @single_url = single_url
@@ -53,7 +53,7 @@ module DingBot
     class IndependentActionCard < ActionCard
       attr_accessor :buttons
 
-      def initialize(title='', text='', btn_orientation='0', hide_avatar='0', buttons=[])
+      def initialize(title='', text='', buttons=[], btn_orientation='0', hide_avatar='0')
         super(title, text, btn_orientation, hide_avatar)
         @buttons = buttons
       end

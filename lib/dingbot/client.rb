@@ -1,5 +1,8 @@
 require 'httparty'
+require 'dingbot/configuration'
 require 'dingbot/message/base'
+require 'dingbot/message/text'
+require 'dingbot/message/markdown'
 
 module DingBot
   # @private
@@ -11,8 +14,16 @@ module DingBot
 
     attr_accessor :access_token
 
-    def initialize(access_token='')
-      @access_token = access_token
+    # @private
+    attr_accessor(*Configuration::VALID_OPTIONS_KEYS)
+
+    # Creates a new API.
+    # @raise [Error:MissingCredentials]
+    def initialize(options={})
+      options = DingBot.options.merge(options)
+      (Configuration::VALID_OPTIONS_KEYS).each do |key|
+        send("#{key}=", options[key]) if options[key]
+      end
     end
 
     # Parse response body.
@@ -32,7 +43,17 @@ module DingBot
     end
 
     def send_msg(message)
-      validate self.class.post(DingBot::ENDPOINT, {query: {access_token: @access_token}, body: message.to_json})
+      validate self.class.post(@endpoint, {query: {access_token: @access_token}, body: message.to_json})
+    end
+
+    def send_text(content)
+      message = DingBot::Message::Text.new(content)
+      send_msg(message)
+    end
+
+    def send_markdown(title, text)
+      message = DingBot::Message::Markdown.new(title, text)
+      send_msg(message)
     end
 
     # Checks the response code for common errors.

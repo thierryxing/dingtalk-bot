@@ -1,6 +1,7 @@
 require "dingbot/version"
 require 'dingbot/error'
 require 'dingbot/client'
+require 'dingbot/configuration'
 require 'dingbot/message/text'
 require 'dingbot/message/link'
 require 'dingbot/message/markdown'
@@ -8,14 +9,13 @@ require 'dingbot/message/action_card'
 require 'dingbot/message/feed_card'
 
 module DingBot
-
-  ENDPOINT = "https://oapi.dingtalk.com/robot/send"
+  extend Configuration
 
   # Alias for DingBot::Client.new
   #
   # @return [DingBot::Client]
-  def self.client(access_token='')
-    DingBot::Client.new(access_token)
+  def self.client(options={})
+    DingBot::Client.new(options)
   end
 
   # Delegate to DingBot::Client
@@ -38,7 +38,7 @@ module DingBot
   #
   # @return [Array<Symbol>]
   def self.actions
-    hidden = /access_token|post|validate|set_request_defaults|httparty/
+    hidden = /access_token|post|validate|httparty/
     (DingBot::Client.instance_methods - Object.methods).reject {|e| e[hidden]}
   end
 
