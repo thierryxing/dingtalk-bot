@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c677bfc7-f26b-44ab-b929-b38da245becc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/dingbot/configuration.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dingbot.gemspec" afterPath="$PROJECT_DIR$/dingbot.gemspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dingbot.rb" afterPath="$PROJECT_DIR$/lib/dingbot.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dingbot/client.rb" afterPath="$PROJECT_DIR$/lib/dingbot/client.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dingbot/message/action_card.rb" afterPath="$PROJECT_DIR$/lib/dingbot/message/action_card.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dingbot/message/text.rb" afterPath="$PROJECT_DIR$/lib/dingbot/message/text.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/dingbot_test.rb" afterPath="$PROJECT_DIR$/test/dingbot_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dingbot/version.rb" afterPath="$PROJECT_DIR$/lib/dingbot/version.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,18 +22,70 @@
       <file leaf-file-name="dingbot.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/dingbot.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="520">
               <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="configuration.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dingbot.gemspec" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dingbot.gemspec">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="version.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/dingbot/version.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="20">
+                <caret line="1" column="49" lean-forward="false" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
+                <folding>
+                  <marker date="1497850588000" expanded="true" signature="556:872" ph="do ... end" />
+                  <marker date="1497850588000" expanded="true" signature="948:989" ph=" ... end" />
+                  <marker date="1497850588000" expanded="true" signature="1017:1151" ph=" ... end" />
+                  <marker date="1497850588000" expanded="true" signature="1177:1631" ph=" ... end" />
+                  <marker date="1497850588000" expanded="true" signature="1665:1731" ph=" ... end" />
+                  <marker date="1497850588000" expanded="true" signature="1780:2032" ph=" ... end" />
+                  <marker date="1497850588000" expanded="true" signature="2089:2474" ph=" ... end" />
+                  <marker date="1497850588000" expanded="true" signature="2509:2986" ph=" ... end" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configuration.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/dingbot/configuration.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+              <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -49,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/lib/dingbot/client.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="302">
-              <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+              <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -70,16 +116,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="700">
               <caret line="35" column="9" lean-forward="false" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feed_card.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/dingbot/message/feed_card.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -128,19 +164,19 @@
         <option value="$PROJECT_DIR$/lib/dingbot/message/feed_card.rb" />
         <option value="$PROJECT_DIR$/lib/dingbot/message/base.rb" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/lib/dingbot/version.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/lib/dingbot/error.rb" />
         <option value="$PROJECT_DIR$/lib/dingbot/message/markdown.rb" />
         <option value="$PROJECT_DIR$/lib/dingbot/message/link.rb" />
         <option value="$PROJECT_DIR$/lib/dingbot/message/text.rb" />
-        <option value="$PROJECT_DIR$/dingbot.gemspec" />
         <option value="$PROJECT_DIR$/lib/dingbot/configuration.rb" />
         <option value="$PROJECT_DIR$/lib/dingbot.rb" />
         <option value="$PROJECT_DIR$/lib/dingbot/client.rb" />
         <option value="$PROJECT_DIR$/lib/dingbot/message/action_card.rb" />
         <option value="$PROJECT_DIR$/test/dingbot_test.rb" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/dingbot.gemspec" />
+        <option value="$PROJECT_DIR$/lib/dingbot/version.rb" />
       </list>
     </option>
   </component>
@@ -483,15 +519,16 @@
       <updated>1497604722774</updated>
       <workItem from="1497604723936" duration="2965000" />
       <workItem from="1497772186956" duration="12205000" />
-      <workItem from="1497843772813" duration="2509000" />
+      <workItem from="1497843772813" duration="3306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17679000" />
+    <option name="totallyTimeSpent" value="18476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19648562" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -501,7 +538,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23517169" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331947" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331947" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -615,6 +652,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -722,13 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dingbot/version.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/dingbot/error.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -769,22 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dingbot.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dingbot.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/dingbot/message/text.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -812,7 +827,7 @@
     <entry file="file://$PROJECT_DIR$/lib/dingbot/client.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
-          <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -825,6 +840,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dingbot/configuration.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dingbot.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="20">
+            <caret line="1" column="49" lean-forward="false" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
+            <folding>
+              <marker date="1497850588000" expanded="true" signature="556:872" ph="do ... end" />
+              <marker date="1497850588000" expanded="true" signature="948:989" ph=" ... end" />
+              <marker date="1497850588000" expanded="true" signature="1017:1151" ph=" ... end" />
+              <marker date="1497850588000" expanded="true" signature="1177:1631" ph=" ... end" />
+              <marker date="1497850588000" expanded="true" signature="1665:1731" ph=" ... end" />
+              <marker date="1497850588000" expanded="true" signature="1780:2032" ph=" ... end" />
+              <marker date="1497850588000" expanded="true" signature="2089:2474" ph=" ... end" />
+              <marker date="1497850588000" expanded="true" signature="2509:2986" ph=" ... end" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -833,30 +884,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="84">
-            <caret line="87" column="3" lean-forward="true" selection-start-line="87" selection-start-column="3" selection-end-line="87" selection-end-column="3" />
-            <folding>
-              <marker date="1497846243000" expanded="true" signature="559:875" ph="do ... end" />
-              <marker date="1497846243000" expanded="true" signature="951:992" ph=" ... end" />
-              <marker date="1497846243000" expanded="true" signature="1020:1154" ph=" ... end" />
-              <marker date="1497846243000" expanded="true" signature="1180:1634" ph=" ... end" />
-              <marker date="1497846243000" expanded="true" signature="1668:1734" ph=" ... end" />
-              <marker date="1497846243000" expanded="true" signature="1783:2035" ph=" ... end" />
-              <marker date="1497846243000" expanded="true" signature="2092:2477" ph=" ... end" />
-              <marker date="1497846243000" expanded="true" signature="2512:2989" ph=" ... end" />
-            </folding>
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/dingbot.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dingbot/configuration.rb">
+    <entry file="file://$PROJECT_DIR$/lib/dingbot/version.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="40">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding />
         </state>
       </provider>
