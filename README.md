@@ -1,5 +1,6 @@
 # DingTalk Bot
-[![Gem Version](https://rubygems.org/gems/dingbot)](https://badge.fury.io/rb/dingbot.svg)
+[![Build Status](https://travis-ci.org/thierryxing/dingtalk-bot.svg?branch=master)](https://travis-ci.org/thierryxing/dingtalk-bot)
+[![Gem Version](https://badge.fury.io/rb/dingbot.svg)](https://rubygems.org/gems/dingbot)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/thierryxing/dingtalk-bot/master/LICENSE.txt)
 
 DingTalk Bot是阿里钉钉自定义机器人的Ruby库  

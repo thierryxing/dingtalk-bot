@@ -3,7 +3,7 @@ require "dingbot"
 
 DingBot.configure do |config|
   config.endpoint = 'https://oapi.dingtalk.com/robot/send' # API endpoint URL, default: ENV['DINGTALK_API_ENDPOINT'] or https://oapi.dingtalk.com/robot/send
-  config.access_token = '3ddef428f1478056e858450e07272834c79bd538e8055a04e989573c4691723c' # access token, default: ENV['DINGTALK_ACCESS_TOKEN']
+  config.access_token = '3ddef428f1478056e858450e07272834c79bd538e8055a04e989573c4691xxxx' # access token, default: ENV['DINGTALK_ACCESS_TOKEN']
 end
 
 # 快速发送一套只包含文本的Text消息（不需要构造Message对象）
@@ -80,4 +80,4 @@ def send_feed_card
   DingBot.send_msg(message)
 end
 
-send_simple_text
+# send_simple_text
