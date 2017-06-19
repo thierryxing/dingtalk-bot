@@ -26,7 +26,7 @@ def send_link
   message = DingBot::Message::Link.new(
       '我就是我, 是不一样的烟火',
       '这个即将发布的新版本，创始人陈航（花名“无招”）称它为“红树林”。',
-      'https://mp.weixin.qq.com/s?__biz=MzA4NjMwMTA2Ng==&mid=2650316842&idx=1&sn=60da3ea2b29f1dcc43a7c8e4a7c97a16&scene=2&srcid=09189AnRJEdIiWVaKltFzNTw&from=timeline&isappinstalled=0&key=&ascene=2&uin=&devicetype=android-23&version=26031933&nettype=WIFI',
+      'https://www.dingtalk.com/',
       'https://avatars1.githubusercontent.com/u/64818'
   )
   DingBot.send_msg(message)

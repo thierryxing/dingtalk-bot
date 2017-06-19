@@ -25,10 +25,15 @@ gem 'dingbot'
 初始化客户端:
 
 ```ruby
+# 全局配置方式
 DingBot.configure do |config|
   config.endpoint = 'https://oapi.dingtalk.com/robot/send' # API endpoint URL, default: ENV['DINGTALK_API_ENDPOINT'] or https://oapi.dingtalk.com/robot/send
   config.access_token = '3ddef428f1478056e858450e07272834c79bd538e8055a04e989573c469xxxx' # access token, default: ENV['DINGTALK_ACCESS_TOKEN']
 end
+
+# 局部配置方式
+ DingBot.endpoint='https://oapi.dingtalk.com/robot/send'
+ DingBot.access_token = '3ddef428f1478056e858450e07272834c79bd538e8055a04e989573c469xxxx'
 ```
 
 发送消息
@@ -53,7 +58,7 @@ def send_link
   message = DingBot::Message::Link.new(
       '我就是我, 是不一样的烟火',
       '这个即将发布的新版本，创始人陈航（花名“无招”）称它为“红树林”。',
-      'https://mp.weixin.qq.com/s?__biz=MzA4NjMwMTA2Ng==&mid=2650316842&idx=1&sn=60da3ea2b29f1dcc43a7c8e4a7c97a16&scene=2&srcid=09189AnRJEdIiWVaKltFzNTw&from=timeline&isappinstalled=0&key=&ascene=2&uin=&devicetype=android-23&version=26031933&nettype=WIFI',
+      'https://www.dingtalk.com/',
       'https://avatars1.githubusercontent.com/u/64818'
   )
   DingBot.send_msg(message)
