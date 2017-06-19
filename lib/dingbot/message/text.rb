@@ -17,7 +17,7 @@ module DingBot
     # }
     class Text < Base
       attr_accessor :content, :at_mobiles, :is_at_all
-      
+
       def initialize(content='', at_mobiles=[], is_at_all=false)
         @content = content
         @at_mobiles = at_mobiles
@@ -32,7 +32,7 @@ module DingBot
         super.merge(
             {
                 text: {
-                    "content": @content
+                    content: @content
                 },
                 at: {
                     atMobiles: @at_mobiles,

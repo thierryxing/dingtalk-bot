@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c677bfc7-f26b-44ab-b929-b38da245becc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dingbot.gemspec" afterPath="$PROJECT_DIR$/dingbot.gemspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dingbot/version.rb" afterPath="$PROJECT_DIR$/lib/dingbot/version.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/dingbot/message/text.rb" afterPath="$PROJECT_DIR$/lib/dingbot/message/text.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="version.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/dingbot/version.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="40">
@@ -101,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="text.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="text.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/dingbot/message/text.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+            <state relative-caret-position="371">
+              <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -168,7 +167,6 @@
         <option value="$PROJECT_DIR$/lib/dingbot/error.rb" />
         <option value="$PROJECT_DIR$/lib/dingbot/message/markdown.rb" />
         <option value="$PROJECT_DIR$/lib/dingbot/message/link.rb" />
-        <option value="$PROJECT_DIR$/lib/dingbot/message/text.rb" />
         <option value="$PROJECT_DIR$/lib/dingbot/configuration.rb" />
         <option value="$PROJECT_DIR$/lib/dingbot.rb" />
         <option value="$PROJECT_DIR$/lib/dingbot/client.rb" />
@@ -177,6 +175,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/dingbot.gemspec" />
         <option value="$PROJECT_DIR$/lib/dingbot/version.rb" />
+        <option value="$PROJECT_DIR$/lib/dingbot/message/text.rb" />
       </list>
     </option>
   </component>
@@ -519,12 +518,12 @@
       <updated>1497604722774</updated>
       <workItem from="1497604723936" duration="2965000" />
       <workItem from="1497772186956" duration="12205000" />
-      <workItem from="1497843772813" duration="3306000" />
+      <workItem from="1497843772813" duration="3507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18476000" />
+    <option name="totallyTimeSpent" value="18677000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
@@ -800,14 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/dingbot/message/text.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/dingbot/message/action_card.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="509">
@@ -896,6 +887,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/dingbot/message/text.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
           <folding />
         </state>
       </provider>
