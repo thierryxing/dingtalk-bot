@@ -47,7 +47,7 @@ end
 def send_text
   message = DingBot::Message::Text.new(
       '我就是我, 是不一样的烟火',
-      ['13718896117'],
+      ['1371xxxx117'],
       false
   )
   DingBot.send_msg(message)
