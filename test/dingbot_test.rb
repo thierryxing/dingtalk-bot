@@ -1,10 +1,13 @@
 require "bundler/setup"
 require "dingbot"
 
+
 DingBot.configure do |config|
   config.endpoint = 'https://oapi.dingtalk.com/robot/send' # API endpoint URL, default: ENV['DINGTALK_API_ENDPOINT'] or https://oapi.dingtalk.com/robot/send
-  config.access_token = '3ddef428f1478056e858450e07272834c79bd538e8055a04e989573c4691xxxx' # access token, default: ENV['DINGTALK_ACCESS_TOKEN']
+  config.access_token = 'f752ca5f851ba108605acaa5f44aa2709ab3b1aea79d22312ed6d25d0fdc2xxx' # access token, default: ENV['DINGTALK_ACCESS_TOKEN']
 end
+
+PHONE = '13718896xxx'
 
 # 快速发送一套只包含文本的Text消息（不需要构造Message对象）
 def send_simple_text
@@ -14,8 +17,8 @@ end
 # 发送复杂Text消息
 def send_text
   message = DingBot::Message::Text.new(
-      '我就是我, 是不一样的烟火',
-      ['13718896117'],
+      "我就是我, 是不一样的烟火 @#{PHONE}",
+      [PHONE],
       false
   )
   DingBot.send_msg(message)
@@ -35,6 +38,17 @@ end
 # 发送Markdown消息
 def send_markdown
   DingBot.send_markdown('我就是我, 是不一样的烟火', '### 我就是我, 是不一样的烟火')
+end
+
+# 发送Markdown消息, 并 at 某人
+def send_markdown_at_one
+    message = DingBot::Message::Markdown.new(
+        '我就是我, 是不一样的烟火', 
+        "##### 我就是我, 是不一样的烟火  @#{PHONE}",
+        [PHONE],
+        false
+    )
+    DingBot.send_msg(message)
 end
 
 # 发送整体跳转ActionCard消息
@@ -80,4 +94,5 @@ def send_feed_card
   DingBot.send_msg(message)
 end
 
-# send_simple_text
+send_text
+send_markdown_at_one
