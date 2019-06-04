@@ -4,7 +4,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/thierryxing/dingtalk-bot/master/LICENSE.txt)
 
 DingTalk Bot是阿里钉钉自定义机器人的Ruby库  
-官方文档：[阿里钉钉自定义机器人](https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7629140.0.0.karFPe&treeId=257&articleId=105735&docType=1). 
+官方文档：[阿里钉钉自定义机器人](https://open-doc.dingtalk.com/microapp/serverapi2/qf2nxq). 
 
 
 ## 安装
