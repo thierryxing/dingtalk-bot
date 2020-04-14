@@ -2,7 +2,7 @@ module DingBot
   # Defines constants and methods related to configuration.
   module Configuration
     # An array of valid keys in the options hash when configuring a Sentry::API.
-    VALID_OPTIONS_KEYS = [:endpoint, :access_token, :httparty].freeze
+    VALID_OPTIONS_KEYS = [:endpoint, :access_token, :httparty, :secret].freeze
 
     # The user agent that will be sent to the API endpoint if none is set.
     DEFAULT_USER_AGENT = "DingBot Ruby Gem #{DingBot::VERSION}".freeze
@@ -34,6 +34,7 @@ module DingBot
     def reset
       self.endpoint = ENV['DINGTALK_ENDPOINT'] || DEFAULT_ENDPOINT
       self.access_token = ENV['DINGTALK_ACCESS_TOKEN']
+      self.secret = ENV['DINGTALK_SECRET']
     end
 
   end
