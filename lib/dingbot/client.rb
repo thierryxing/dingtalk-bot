@@ -12,7 +12,8 @@ module DingBot
     format :json
     headers "Content-Type" => "application/json"
 
-    attr_accessor :access_token
+    # attr_accessor :access_token
+    # attr_accessor :secret
 
     # @private
     attr_accessor(*Configuration::VALID_OPTIONS_KEYS)
@@ -43,7 +44,20 @@ module DingBot
     end
 
     def send_msg(message)
-      validate self.class.post(@endpoint, {query: {access_token: @access_token}, body: message.to_json})
+      query = {
+        access_token: @access_token,
+      }
+
+      if @secret.present?
+        timestamp = (Time.now.to_f * 1000).to_i
+
+        query.merge!({
+          timestamp: timestamp,
+          sign: Base64.encode64(OpenSSL::HMAC.digest(OpenSSL::Digest.new('sha256'), @secret, "#{timestamp}\n#{@secret}")).strip
+        })
+      end
+
+      validate self.class.post(@endpoint, { query: query, body: message.to_json })
     end
 
     def send_text(content)

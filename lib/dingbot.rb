@@ -38,7 +38,7 @@ module DingBot
   #
   # @return [Array<Symbol>]
   def self.actions
-    hidden = /access_token|post|validate|httparty/
+    hidden = /access_token|post|validate|httparty|secret/
     (DingBot::Client.instance_methods - Object.methods).reject {|e| e[hidden]}
   end
 
