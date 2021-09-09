@@ -36,23 +36,9 @@ module DingBot
         message = parsed_response.message || parsed_response.error
 
         "Server responded with code #{@response.code}, message: " \
-        "#{handle_message(message)}. " \
         "Request URI: #{@response.request.base_uri}#{@response.request.path}"
       end
 
-      # Handle error response message in case of nested hashes
-      def handle_message(message)
-        case message
-          when SentryApi::ObjectifiedHash
-            message.to_h.sort.map do |key, val|
-              "'#{key}' #{(val.is_a?(Hash) ? val.sort.map {|k, v| "(#{k}: #{v.join(' ')})"} : val).join(' ')}"
-            end.join(', ')
-          when Array
-            message.join(' ')
-          else
-            message
-        end
-      end
     end
 
     # Raised when API endpoint returns the HTTP status code 400.

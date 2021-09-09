@@ -1,4 +1,5 @@
 require 'httparty'
+require 'json'
 require 'dingbot/configuration'
 require 'dingbot/message/base'
 require 'dingbot/message/text'
@@ -48,7 +49,7 @@ module DingBot
         access_token: @access_token,
       }
 
-      if @secret.present?
+      if !@secret.nil? and !@secret.empty?
         timestamp = (Time.now.to_f * 1000).to_i
 
         query.merge!({
@@ -97,8 +98,12 @@ module DingBot
                     end
 
       fail error_klass.new(response) if error_klass
-
       parsed = response.parsed_response
+      
+      body = JSON.parse(response.body)
+      errcode = body["errcode"]
+      fail body["errmsg"] if errcode != 0
+
       parsed.client = self if parsed.respond_to?(:client=)
       parsed.parse_headers!(response.headers) if parsed.respond_to?(:parse_headers!)
       parsed
