@@ -4,7 +4,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/thierryxing/dingtalk-bot/master/LICENSE.txt)
 
 DingTalk Bot是阿里钉钉自定义机器人的Ruby库  
-官方文档：[阿里钉钉自定义机器人](https://open-doc.dingtalk.com/microapp/serverapi2/qf2nxq). 
+官方文档：[阿里钉钉自定义机器人](https://developers.dingtalk.com/document/robots/robot-overview). 
 
 
 ## 安装
@@ -28,12 +28,14 @@ gem 'dingbot'
 # 全局配置方式
 DingBot.configure do |config|
   config.endpoint = 'https://oapi.dingtalk.com/robot/send' # API endpoint URL, default: ENV['DINGTALK_API_ENDPOINT'] or https://oapi.dingtalk.com/robot/send
-  config.access_token = '3ddef428f1478056e858450e07272834c79bd538e8055a04e989573c469xxxx' # access token, default: ENV['DINGTALK_ACCESS_TOKEN']
+  config.access_token = 'your access token' # access token, default: ENV['DINGTALK_ACCESS_TOKEN']
+  config.secret = "your sign secret" # sign secret
 end
 
 # 局部配置方式
  DingBot.endpoint='https://oapi.dingtalk.com/robot/send'
- DingBot.access_token = '3ddef428f1478056e858450e07272834c79bd538e8055a04e989573c469xxxx'
+ DingBot.access_token = 'your access token'
+ DingBot.secret = "your sign secret" # sign secret
 ```
 
 发送消息
